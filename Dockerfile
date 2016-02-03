@@ -8,6 +8,6 @@ ONBUILD COPY . /go/src/app
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
-RUN go build /go/src/app/CAgent.go
+RUN go build /go/src/app/ICAgent.go
 
 ENTRYPOINT /go/src/app/ICAgent
